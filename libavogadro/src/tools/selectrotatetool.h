@@ -45,6 +45,7 @@ class QVBoxLayout;
 namespace Avogadro {
 
   class Molecule;
+  class TitledMenu;
 
 
   class SelectRotateTool : public Tool
@@ -113,8 +114,8 @@ namespace Avogadro {
       QVBoxLayout        *m_layout;
 
       QWidget            *m_settingsWidget;
-      QMenu              *m_atomMenu;
-      QMenu              *m_bondMenu;
+      TitledMenu              *m_atomMenu;
+      TitledMenu              *m_bondMenu;
       Primitive          *m_currentPrimitive;
 
     private Q_SLOTS:
